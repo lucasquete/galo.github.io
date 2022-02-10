@@ -129,12 +129,12 @@ function clearInputs() {
 
 function sendEmail(nameInput, email1, message1) {
     Email.send({
-        SecureToken : "2eac837e-c087-4ce7-9eb9-b7e9d84420e6",
+        SecureToken : "924fc4b0-81fa-486e-89dd-c6889fb1f4a3",
         To : "galocelebraciones@hotmail.com",
         From : email1.value,
         Subject : "Galo consultas",
         Body: `${nameInput.value}, ${message1.value}`
     }).then(
-    message => alert(message)
+    msg => alert("Email se ha enviado")
     );
 }
