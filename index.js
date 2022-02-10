@@ -135,13 +135,6 @@ function sendEmail(nameInput, email1, message1) {
         Subject : "Galo consultas",
         Body: `${nameInput.value}, ${message1.value}`
     }).then(
-      msg => alert("El email se ha enviado")
+    message => alert(message)
     );
 }
-
-
-//E925DD7E9CF43A3B798AC5DAE5ED365F05FE
-//49420E70E6C0F73A526B185363623F5F1BBE
-//280CACE0BE6E2B16FEC24F12AA8EEA2E4384
-//9d0ef95b-bd44-4adb-8f69-5a61621dbfa0
-//799A6C66EC324168C036E4E8BF0C6552E619
